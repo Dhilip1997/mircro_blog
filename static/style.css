@@ -1,0 +1,138 @@
+html{
+    font-family: Lato, sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-size:16px;
+    background-color:rgb(149, 223, 255)
+}
+
+body{
+    box-sizing:border-box;
+    margin:0;
+}
+.navbar__brand{
+    display: flex;
+    align-items: center
+}
+
+.nav-logo{
+    margin-right: 30px;
+}
+
+
+.navbar__navigation{
+    list-style:none;
+    display:flex;
+    flex-direction: row;
+    text-decoration:none;
+}
+
+.navbar_navigation-items{
+    margin-left:25px;
+
+}
+
+.main{
+    max-width: 450px;
+    margin:0px auto;
+    padding: 0 20px;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form__input{
+    width: 100%;
+}
+
+.form__label{
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.form__textarea{
+    width: inherit;
+    font-size: 16px;
+    padding: 12px 20px;
+    box-sizing:border-box;
+    border:none;
+    background-color: rgb(229, 229, 229);
+    height:150px;
+    
+}
+
+.form__submit{
+    background-color: rgb(51, 152, 247);
+    margin-left: 375px;
+    border: none;
+    padding: 5px 10px;
+    font-size:18px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    cursor:pointer;
+}
+
+.form__submit:hover{
+    background-color: rgb(73, 139, 253)
+}
+
+.entry{
+    margin-top: 50px;
+}
+
+.entry__title{
+    display:inline;
+    font-size: 18px;
+
+}
+
+.entry__date{
+    color: #5c6b70;
+}
+
+.footer{
+    background-color: #323f43;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-top: 4px solid black;
+    color: white;
+    font-size: 12px;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .left{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column {
+    display: flex;
+    flex-grow:0.5;
+    margin-left:50px;
+}
+
+.footer__item {
+    margin-bottom:10px;
+    color:inherit;
+    text-decoration:none;
+    cursor:pointer;
+
+}
+
+.footer__item:hover {
+    text-decoration:underline;
+}
