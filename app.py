@@ -32,7 +32,7 @@ def create_app():
 # def open_browser():
 #     webbrowser.open_new('http://127.0.0.1:5000/')
 
-create_app().run(port=5000)
+create_app().run(port=5987)
 
 # if __name__ == "__main__":
 #     # Timer(1, open_browser).start()
