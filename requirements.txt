@@ -1,2 +1,2 @@
 Flask==2.2.2
-pymong[srv]
+pymong[srv]==2.2.1
