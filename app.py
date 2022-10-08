@@ -19,12 +19,10 @@ def create_app():
             # print(entries)
             app.db.entities.insert_one(
                 {"content": entry_content, "date": formated_date})
-            for ele in app.db.entities.find({}):
-                print(ele)
+      
 
         entry_with_date = [(entry["content"], entry["date"], datetime.datetime.strptime(
             entry["date"], "%y-%m-%d").strftime("%b %d '%y")) for entry in app.db.entities.find({})]
-        print(entry_with_date)
         return render_template("index.html", entries = entry_with_date)
 
     return app
@@ -32,7 +30,7 @@ def create_app():
 # def open_browser():
 #     webbrowser.open_new('http://127.0.0.1:5000/')
 
-create_app().run(port=5987)
+create_app().run(port=9091)
 
 # if __name__ == "__main__":
 #     # Timer(1, open_browser).start()
